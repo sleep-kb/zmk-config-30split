@@ -2,7 +2,7 @@
 #include "split-layouts.dtsi"
 
 &default_layout {
-  transform = <&default_transformation>;
+  transform = <&default_transform>;
 };
 
 / {
