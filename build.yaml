@@ -7,3 +7,4 @@ include:
    cmake-args: -DCONFIG_ZMK_SPLIT=Y DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_STUDIO=y
  - board: nice_nano
    shield: split_right 
+   cmake-args: -DCONFIG_ZMK_SPLIT=Y DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
