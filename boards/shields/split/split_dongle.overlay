@@ -1,17 +1,17 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "split-layouts.dtsi"
 
-&default_layout {
+&physical_layout0 {
   transform = <&default_transform>;
 };
 
 / {
     chosen {
       zmk,kscan = &mock_kscan;
-      zmk,physical-layout = &default_layout;
+      zmk,physical-layout = &physical_layout0;
     };
 
-    default_transform: default_transform {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <3>;
