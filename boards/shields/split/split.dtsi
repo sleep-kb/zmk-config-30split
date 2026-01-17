@@ -7,7 +7,7 @@
         zmk,physical-layout = &physical_layout0;
     };
 
-    kscan: kscan {
+    kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         // Set this to "col2row" or "row2col" to match the hardware. If using
         // "row2col", change the col-gpios in the _left.overlay and _right.overlay
