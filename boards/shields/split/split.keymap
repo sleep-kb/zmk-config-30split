@@ -1,5 +1,4 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
+#define ZMK_BEHAVIORS_OMIT_KT
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -17,6 +16,7 @@
 */
 
         default_layer {
+            display-name = "Base";
             bindings = <
             &kp Q    &kp W    &kp F    &kp P   &kp B             &kp M    &kp J    &kp L    &kp U    &kp Y
             &kp A    &kp B    &kp C    &kp D   &mo 1             &mo 2    &kp N    &kp E    &kp I    &kp O 
@@ -24,6 +24,7 @@
             >;
         };
         layer1 {
+            display-name = "Layer1";
             bindings = <
             &kp Q    &kp N7   &kp N8   &kp N9  &kp B             &kp M    &kp J    &kp L    &kp U    &kp Y
             &kp A    &kp N4   &kp N5   &kp N6  &trans            &trans   &kp N    &kp E    &kp I    &kp O 
@@ -31,6 +32,7 @@
             >;
         };
         layer2 {
+            display-name = "Layer2";
             bindings = <
             &kp Q    &kp W    &kp F    &kp P   &kp B             &kp M    &kp J    &kp L    &kp U    &kp Y
             &kp LSHFT &kp B    &kp C    &kp D   &trans            &trans   &kp N    &kp E    &kp I    &kp O 

@@ -1,8 +1,14 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <split.dtsi>
+
+&physical_layout0 {
+  transform = <&default_transform>;
+};
 
 / {
     chosen {
       zmk,kscan = &mock_kscan;
+      zmk, physical-layout = &physical_layout0;
     };
 
     mock_kscan: mock_kscan_0 {
