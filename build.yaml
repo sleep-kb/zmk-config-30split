@@ -1,13 +1,14 @@
 include:
- - board: nice_nano_v2
-   shield: split_dongle
-   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"30split\" -DCONFIG_ZMK_STUDIO=y
-   snippet: studio-rpc-usb-uart
+# - board: nice_nano_v2
+#   shield: split_dongle
+#   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"30split\" -DCONFIG_ZMK_STUDIO=y
+#   snippet: studio-rpc-usb-uart
  - board: nice_nano_v2
    shield: settings_reset
  - board: nice_nano_v2
    shield: split_left
-   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"30split-left\"-DCONFIG_ZMK_SPLIT=y DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+   snippet: studio-rpc-usb-uart
+   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"30split-left\"-DCONFIG_ZMK_SPLIT=y DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_STUDIO=y
  - board: nice_nano_v2
    shield: split_right 
    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"30split-right\" -DCONFIG_ZMK_SPLIT=y DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
