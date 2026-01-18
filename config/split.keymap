@@ -1,0 +1,43 @@
+#define ZMK_BEHAVIORS_OMIT_KT
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    // Define a default keymap here.
+    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    keymap {
+        compatible = "zmk,keymap";
+
+/*
+*   | Q | W | F | P | B |        | M | J | L | U | Y |
+*   | A | R | S | T | fn|        |fn | N | E | I | O |
+*   | Z | X | C | G |spc|        |ret| D | V | K | H |
+*/
+
+        default_layer {
+            display-name = "Base";
+            bindings = <
+            &kp Q    &kp W    &kp F    &kp P   &kp B             &kp M    &kp J    &kp L    &kp U    &kp Y
+            &kp A    &kp B    &kp C    &kp D   &mo 1             &mo 2    &kp N    &kp E    &kp I    &kp O 
+            &kp Z    &kp X    &kp C    &kp G   &kp SPACE         &kp RET  &kp D    &kp V    &kp K    &kp H
+            >;
+        };
+        layer1 {
+            display-name = "Layer1";
+            bindings = <
+            &kp Q    &kp N7   &kp N8   &kp N9  &kp B             &kp M    &kp J    &kp L    &kp U    &studio_unlock
+            &kp A    &kp N4   &kp N5   &kp N6  &trans            &trans   &kp N    &kp E    &kp I    &kp O 
+            &kp N0   &kp N1   &kp N2   &kp N3  &trans            &trans   &kp D    &kp V    &kp K    &kp H
+            >;
+        };
+        layer2 {
+            display-name = "Layer2";
+            bindings = <
+            &kp Q    &kp W    &kp F    &kp P   &kp B             &kp M    &kp J    &kp L    &kp U    &kp Y
+            &kp LSHFT &kp B    &kp C    &kp D   &trans            &trans   &kp N    &kp E    &kp I    &kp O 
+            &kp LCTRL &kp LCMD &kp LALT &kp G   &trans            &trans   &kp D    &kp V    &kp K    &kp H
+            >;
+        };
+    };
+};
