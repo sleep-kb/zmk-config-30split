@@ -1,4 +1,4 @@
-config SHIELD_DONGLE
+config SHIELD_SPLIT_DONGLE
     def_bool $(shields_list_contains,split_dongle)
 
 config SHIELD_SPLIT_LEFT
