@@ -22,3 +22,4 @@ requires:
 siblings:
   - split_left
   - split_right
+  - split_dongle
