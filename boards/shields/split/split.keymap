@@ -22,7 +22,7 @@
             &kp A    &kp S    &kp D    &kp F   &kp N1            &kp N3   &kp H    &kp J    &kp K    &kp L 
             &kp Y    &kp X    &kp C    &kp V   &kp N2            &kp N4   &kp G    &kp B    &kp N    &kp M
             >;
-        };
+        }; /*
         layer1 {
             display-name = "Layer1";
             bindings = <
@@ -38,6 +38,6 @@
             &kp LSHFT &kp B    &kp C    &kp D   &trans            &trans   &kp N    &kp E    &kp I    &kp O 
             &kp LCTRL &kp LCMD &kp LALT &kp G   &trans            &trans   &kp D    &kp V    &kp K    &kp H
             >;
-        };
+        }; /**/
     };
 };
